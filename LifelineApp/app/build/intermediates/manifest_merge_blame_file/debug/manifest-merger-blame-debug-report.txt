@@ -1,0 +1,112 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lifeline.lifelineApp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:6:5-43:19
+12        android:allowBackup="true"
+12-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\c61287263f7ce0bc369b924eb1beec7d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:8:9-65
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:fullBackupContent="@xml/backup_rules"
+17-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:9:9-54
+18        android:icon="@mipmap/ic_launcher"
+18-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.Lifeline" >
+23-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:14:9-46
+24        <activity
+24-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:16:9-20:44
+25            android:name="com.lifeline.lifelineApp.patientListActivity"
+25-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:17:13-48
+26            android:exported="false"
+26-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:18:13-37
+27            android:label="Patients List"
+27-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:20:13-42
+28            android:parentActivityName="com.lifeline.lifelineApp.MainActivity" />
+28-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:19:13-55
+29        <activity
+29-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:21:9-24:35
+30            android:name="com.lifeline.lifelineApp.MainActivity"
+30-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:22:13-41
+31            android:exported="false"
+31-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:23:13-37
+32            android:label="Home" />
+32-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:24:13-33
+33        <activity
+33-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:25:9-29:51
+34            android:name="com.lifeline.lifelineApp.signup"
+34-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:26:13-35
+35            android:exported="false"
+35-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:27:13-37
+36            android:label="Create a New Account"
+36-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:29:13-49
+37            android:parentActivityName="com.lifeline.lifelineApp.loginActivity" />
+37-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:28:13-56
+38        <activity
+38-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:30:9-38:20
+39            android:name="com.lifeline.lifelineApp.loginActivity"
+39-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:31:13-42
+40            android:exported="true" >
+40-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:32:13-36
+41            <intent-filter>
+41-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:33:13-37:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:34:17-69
+42-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:34:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:36:17-77
+44-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:36:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <meta-data
+48-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:40:9-42:57
+49            android:name="preloaded_fonts"
+49-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:41:13-43
+50            android:resource="@array/preloaded_fonts" />
+50-->D:\Lifeline-main\LifelineApp\app\src\main\AndroidManifest.xml:42:13-54
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+54            android:authorities="com.lifeline.lifelineApp.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\0db2a54fe3e61853a6995181bdd477b5\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\429d62d1c4cfac9c73f86410faad713f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\429d62d1c4cfac9c73f86410faad713f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Pranav Arra\.gradle\caches\transforms-3\429d62d1c4cfac9c73f86410faad713f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+62        </provider>
+63    </application>
+64
+65</manifest>

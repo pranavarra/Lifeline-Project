@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Lifeline-main/LifelineApp/app/src/main/res/layout/activity_login.xml" value="0.2975630611372381" />
+        <entry key="..\:/Lifeline-main/LifelineApp/app/src/main/res/layout/activity_main.xml" value="0.2975630611372381" />
+        <entry key="..\:/Lifeline-main/LifelineApp/app/src/main/res/layout/text_row_item.xml" value="0.28014505893019037" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/drawable/edit_text_border.xml" value="0.2385" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/activity_patient_list.xml" value="0.21248396750748183" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/activity_signup.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/edit_text_border.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/layout/text_row_item.xml" value="0.25" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/menu/menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Naseer/Lifeline/app/src/main/res/xml/searchable.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.28014505893019037" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
