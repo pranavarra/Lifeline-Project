@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+        </script>
+<script type="text/javascript" src="https://livejs.com/live.js"></script>
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Status</title>
+    <script src="plotly.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav>
+        <center>
+<h2 class="main-title">
+Lifeline
+</h2>
+<hr>
+</center>
+</nav>
+    <h2 class="name">
+        Name: Raj Kumar <br>
+        ID: 012353<br>
+        Gender: Male
+        
+    </h2>
+    <table>
+        <tr>
+            <td>
+                <div id="heartDiv" class="dataDiv">
+                    <center>
+                        <h3 style="text-align: center;">
+                            Heart Rate
+                        </h3>
+                        </center>
+                    <div class="center-class">
+                        <i class="fa fa-heartbeat icon-class" style="font-size: 75px; text-align:center;" aria-hidden="true"></i>
+
+                        <h2 id="hrTxt">
+                            80
+                        </h2>
+                        </div>
+                </div>
+            </td>
+
+            <td>
+                <div id="tempDiv" class="dataDiv">
+                    <center>
+                        <h3 style="text-align: center;">
+                            Temerature
+                        </h3>
+                        </center>
+                        
+                    <div class="center-class">
+                        <i class="fa fa-thermometer icon-class" style="font-size:75px"></i>
+
+                        <h2 id="tempTxt">
+                        </h2>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="dataDiv">
+        <h3 style="text-align: center;">
+            ECG
+        </h3>
+        <div id="chart">
+
+        </div>
+    </div>
+
+
+    <script>
+        function getData(){
+            return Math.random();
+        }
+
+        Plotly.newPlot('chart', [{
+            y:[getData()],
+            type:'line'
+        }]);
+        var c = 0;
+        setInterval(function(){
+            Plotly.extendTraces('chart', {y:[[getData()]]}, [0]);
+       
+        c++;
+        if(c > 500){
+            Plotly.relayout('chart', {
+                xaxis:{
+                    range: [c-500, c]
+                }
+            });
+        }
+    }, 15)
+        </script>
+
+        <script>
+            temperatureText = document.getElementById("tempTxt");
+            heartRateText = document.getElementById("hrTxt");
+
+    fetch('jsonDataFile.json').then(response => response.json())
+    .then(data => {
+        console.log(data);
+        temperatureText.innerHTML = data.Temperature;
+        heartRateText.innerHTML = data.HeartRate;
+    });
+        </script>
+
+        <script>
+             
+function checkTime(i) { 
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+            function startTime(){
+                var today = new Date();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+
+                m = checkTime(m);
+                s = checkTime(s);
+            }
+        </script>
+</body>
+</html>

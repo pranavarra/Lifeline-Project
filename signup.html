@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>
+Sign Up
+</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<center>
+<h2>
+Register
+</h2>
+<form action="" method="POST">
+
+<table>
+<tr>
+<td>
+<h3>
+Name
+</h3>
+</td>
+<td>
+<input type="text" class="input-class" name="email">
+</td>
+</tr>
+
+<tr>
+<td>
+<h3>
+E-mail
+</h3>
+</td>
+<td>
+<input type="text" class="input-class" name="pass">
+</td>
+</tr>
+
+<tr>
+<td>
+<h3>
+Password
+</h3>
+</td>
+<td>
+<input type="text" class="input-class" id="p">
+</td>
+</tr>
+
+<tr>
+<td>
+<h3>
+Confirm Password
+</h3>
+</td>
+<td>
+<input type="text" class="input-class" id="cp">
+</td>
+</tr>
+</table>
+
+<button class="submit-class" onclick="SignUp()" name="submit">
+Sign up
+</button>
+
+</form>
+</center>
+
+<script>
+	passTxt = document.getElementById("p");
+	confPassTxt = document.getElementById("cp");
+	function SignUp(){
+		if(passTxt.value == confPassTxt.value){
+			PCPCorrFunc();
+		}else{
+		alert("The password and its confirmatin do not match. Please try again.");
+		}
+	}
+	
+	function PCPCorrFunc(){
+		
+	}
+</script>
+</body>
+</html>
